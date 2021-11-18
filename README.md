@@ -84,7 +84,9 @@ This repository provide the enterprise architecture level sample projects. The g
 \
 [Behavioral Patterns - Iterator](https://davidskyspace.com/behavioral-patterns-iterator/)
 \
-[Behavioral Patterns - Mediator ](https://davidskyspace.com/behavioral-patterns-mediator/)
+[Behavioral Patterns - Mediator](https://davidskyspace.com/behavioral-patterns-mediator/)
+\
+[Behavioral Patterns - Memento](https://davidskyspace.com/behavioral-patterns-memento/)
 
 ### OTHER PART:
 [CRUD – Transaction Behavior in Entity Framework Core](https://davidskyspace.com/crud-transaction-behavior-in-entity-framework-core/)
@@ -102,6 +104,7 @@ This repository provide the enterprise architecture level sample projects. The g
    - Enterprise_Dot_Net_Core_WebApp web project
    - Enterprise_Dot_Net_Core_WebApp.Core core project
    - Enterprise_Dot_Net_Core_WebApp.Infra infra project.
+   - Enterprise_Dot_Net_Core_WebApp.SharedKernel shared kernel project
 
 ## Microsoft Doc reference
 - [Common web application architectures](https://docs.microsoft.com/en-us/dotnet/architecture/modern-web-apps-azure/common-web-application-architectures)
