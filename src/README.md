@@ -1,5 +1,5 @@
 # News
-**<div align="right">Date: Nov, 2021</div>**
+**<div align="right">Date: March, 2022</div>**
 
 ### .NET MVC
 + News
@@ -7,7 +7,7 @@
 + [History](https://github.com/deadislove/Enterprise_MVC_WebApp/wiki/DotNET_MVC_OlderPost)
 ### .NET Core
 + News
-  - [Behavioral Patterns - Memento](https://davidskyspace.com/behavioral-patterns-memento/)
+  - [UnitOfWork pattern concepts in .NET](https://davidskyspace.com/unit-of-work-pattern-concepts-in-net/)
 + [History](https://github.com/deadislove/Enterprise_MVC_WebApp/wiki/DotNET_Core_OlderPost)
 ### Other
 + News

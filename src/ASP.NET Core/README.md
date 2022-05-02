@@ -69,11 +69,32 @@ It is based on the ASP.NET Core framework v2.8.
 [Behavioral Patterns - Mediator ](https://davidskyspace.com/behavioral-patterns-mediator/)
 \
 [Behavioral Patterns - Memento](https://davidskyspace.com/behavioral-patterns-memento/)
+\
+[Behavioral Patterns - Null Objects](https://davidskyspace.com/behavioral-patterns-null-object/)
+\
+[Behavioral Patterns – Observer](https://davidskyspace.com/behavioral-patterns-observer/)
+\
+[Behavioral Patterns – State](https://davidskyspace.com/behavioral-patterns-state/)
+\
+[Behavioral Patterns – Strategy](https://davidskyspace.com/behavioral-patterns-strategy/)
+\
+[Behavioral Patterns – Template method](https://davidskyspace.com/behavioral-patterns-template-method/)
+\
+[Behavioral Patterns - Visitor](https://davidskyspace.com/behavioral-patterns-visitor/)
+\
+[UnitOfWork pattern concepts in .NET](https://davidskyspace.com/unit-of-work-pattern-concepts-in-net/)
 
 ## Release Notification
-- 11/18/2021 Behavioral Patterns - Memento
+- 03/10/2022 UnitOfWork pattern concepts in .NET
 
 ## History
+- 03/10/2022 UnitOfWork pattern concepts in .NET
+- 03/04/2022 Behavioral Patterns - Visitor
+- 02/17/2022 Behavioral Patterns - Template method
+- 02/02/2022 Behavioral Patterns - Strategy
+- 01/20/2022 Behavioral Patterns - State
+- 12/30/2021 Behavioral Patterns - Observer
+- 11/29/2021 Behavioral Patterns - Null Object
 - 11/18/2021 Behavioral Patterns - Memento
 - 11/04/2021 Behavioral Patterns - Mediator
 - 10/25/2021 Behavioral Patterns - Iterator

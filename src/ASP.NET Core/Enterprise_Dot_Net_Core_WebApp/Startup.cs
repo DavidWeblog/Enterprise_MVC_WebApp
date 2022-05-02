@@ -44,15 +44,30 @@ using Enterprise_Dot_Net_Core_WebApp.Core.Interface.DesignPatterns.BehavioralPat
 using Enterprise_Dot_Net_Core_WebApp.Core.Interface.DesignPatterns.BehavioralPatterns.Interpreter;
 using Enterprise_Dot_Net_Core_WebApp.Core.Interface.DesignPatterns.Iterator;
 using Enterprise_Dot_Net_Core_WebApp.Core.Interface.DesignPatterns.Memento;
+using Enterprise_Dot_Net_Core_WebApp.Core.Interface.DesignPatterns.Mediator;
+using Enterprise_Dot_Net_Core_WebApp.Core.Interface.DesignPatterns.BehavioralPatterns.NullObject;
+using Enterprise_Dot_Net_Core_WebApp.Core.Interface.DesignPatterns.BehavioralPatterns.Observer;
+using Enterprise_Dot_Net_Core_WebApp.Core.Interface.DesignPatterns.BehavioralPatterns.State;
+using Enterprise_Dot_Net_Core_WebApp.Core.Interface.DesignPatterns.Strategy;
+using Enterprise_Dot_Net_Core_WebApp.Core.Interface.DesignPatterns.TemplateMethod;
+using Enterprise_Dot_Net_Core_WebApp.Core.Interface.DesignPatterns.Visitor;
 //Design patterns - services
 using Enterprise_Dot_Net_Core_WebApp.Core.Services.DesignPatterns;
 using Enterprise_Dot_Net_Core_WebApp.Core.Services.DesignPatterns.BehavioralPatterns.ChainOfResponsibility;
 using Enterprise_Dot_Net_Core_WebApp.Core.Services.DesignPatterns.BehavioralPatterns.Command;
 using Enterprise_Dot_Net_Core_WebApp.Core.Services.DesignPatterns.BehavioralPatterns.Interpreter;
 using Enterprise_Dot_Net_Core_WebApp.Core.Services.DesignPatterns.BehavioralPatterns.Iterator;
-using Enterprise_Dot_Net_Core_WebApp.Core.Interface.DesignPatterns.Mediator;
 using Enterprise_Dot_Net_Core_WebApp.Core.Services.DesignPatterns.BehavioralPatterns.Mediator;
 using Enterprise_Dot_Net_Core_WebApp.Core.Services.DesignPatterns.BehavioralPatterns.Memento;
+using Enterprise_Dot_Net_Core_WebApp.Core.Services.DesignPatterns.BehavioralPatterns.NullObject;
+using Enterprise_Dot_Net_Core_WebApp.Core.Services.DesignPatterns.BehavioralPatterns.Observer;
+using Enterprise_Dot_Net_Core_WebApp.Core.Services.DesignPatterns.BehavioralPatterns.State;
+using Enterprise_Dot_Net_Core_WebApp.Core.Services.DesignPatterns.BehavioralPatterns.Strategy;
+using Enterprise_Dot_Net_Core_WebApp.Core.Services.DesignPatterns.BehavioralPatterns.TemplateMethod;
+using Enterprise_Dot_Net_Core_WebApp.Core.Services.DesignPatterns.BehavioralPatterns.Visitor;
+//Unit of Work
+using Enterprise_Dot_Net_Core_WebApp.Core.Interface.UnitOfWork;
+using Enterprise_Dot_Net_Core_WebApp.Core.Services.UnitOfWork;
 
 namespace Enterprise_Dot_Net_Core_WebApp
 {
@@ -144,7 +159,21 @@ namespace Enterprise_Dot_Net_Core_WebApp
             services.AddScoped(typeof(IMediatorExe<>), typeof(MediatorServices<>));
             // Memento
             services.AddScoped(typeof(IMementoServices<>), typeof(MementoServices<>));
+            // Null object pattern
+            services.AddScoped(typeof(INullObject), typeof(NullObjServices));
+            // Observer
+            services.AddScoped(typeof(IObserverServices), typeof(ObserverServices));
+            // State
+            services.AddScoped(typeof(IStateServices<>), typeof(StateServices<>));
+            // Strategy
+            services.AddScoped(typeof(IStrategyServices<>), typeof(StrategyServices<>));
+            // Template Method
+            services.AddScoped(typeof(ITemplateMethodServices<>), typeof(TemplateMethodServices<>));
+            // Visitor
+            services.AddScoped(typeof(IVisitorServices<>), typeof(VisitorServices<>));
 
+            // Unit of Work
+            services.AddScoped(typeof(IUnitOfWorkClientServices<>), typeof(UnitOfWorkClientServices<>));
 
             // Service type method.
             services.AddTransient<IOperationTransient, Operation>();
